@@ -5,11 +5,11 @@ public class Pelicula {
     private String portada, titulo, descripcion;
     private Double puntuacion;
 
-    public Pelicula(String portada, String titulo, String descripcion, Double puntuacion) {
+    public Pelicula(String portada, String titulo, Double puntuacion, String descripcion) {
         this.portada = portada;
         this.titulo = titulo;
-        this.descripcion = descripcion;
         this.puntuacion = puntuacion;
+        this.descripcion = descripcion;
     }
 
     public String getPortada() {
@@ -20,11 +20,11 @@ public class Pelicula {
         return titulo;
     }
 
-    public String getDescripcion() {
-        return descripcion;
-    }
-
     public Double getPuntuacion() {
         return puntuacion;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
     }
 }
