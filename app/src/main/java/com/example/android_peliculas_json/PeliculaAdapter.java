@@ -1,6 +1,8 @@
 package com.example.android_peliculas_json;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,6 +42,22 @@ public class PeliculaAdapter extends RecyclerView.Adapter<PeliculaAdapter.Pelicu
         holder.titulo.setText(pelicula.getTitulo());
         holder.puntuacion.setText(pelicula.getPuntuacion().toString());
         holder.descripcion.setText(pelicula.getDescripcion());
+
+        holder.layout_pelicula.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, PeliculaDetallada.class);
+
+                Bundle bundle = new Bundle();
+                bundle.putString("portada", pelicula.getPortada());
+                bundle.putString("titulo", pelicula.getTitulo());
+                bundle.putDouble("puntuacion", pelicula.getPuntuacion());
+                bundle.putString("descripcion", pelicula.getDescripcion());
+
+                intent.putExtras(bundle);
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override
