@@ -8,7 +8,7 @@
 
 
     <ImageView
-        android:id="@+id/caratula_detallada"
+        android:id="@+id/portada_detallada"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:scaleType="centerCrop"
@@ -44,7 +44,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/caratula_detallada" />
+        app:layout_constraintTop_toBottomOf="@+id/portada_detallada" />
 
     <TextView
         android:id="@+id/descripcion_detallada_tv"
