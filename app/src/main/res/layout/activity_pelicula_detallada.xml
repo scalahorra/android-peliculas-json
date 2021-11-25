@@ -19,12 +19,12 @@
 
 
     <TextView
-        android:id="@+id/valoracion_detallada_tv"
+        android:id="@+id/puntuacion_detallada_tv"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="20dp"
-        android:text="rating_tv"
+        android:text="@string/puntuacion_tv"
         android:textColor="@color/teal_700"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
-        android:text="movie"
+        android:text="@string/titulo_tv"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -52,8 +52,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="description"
+        android:text="@string/descripcion_tv"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/valoracion_detallada_tv" />
+        app:layout_constraintTop_toBottomOf="@+id/puntuacion_detallada_tv" />
 </androidx.constraintlayout.widget.ConstraintLayout>

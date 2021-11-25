@@ -17,7 +17,7 @@ public class PeliculaDetallada extends AppCompatActivity {
 
         ImageView portada = findViewById(R.id.portada_detallada);
         TextView titulo = findViewById(R.id.titulo_detallada_tv);
-        TextView puntuacion = findViewById(R.id.valoracion_detallada_tv);
+        TextView puntuacion = findViewById(R.id.puntuacion_detallada_tv);
         TextView descripcion = findViewById(R.id.descripcion_detallada_tv);
 
         Bundle bundle = getIntent().getExtras();
